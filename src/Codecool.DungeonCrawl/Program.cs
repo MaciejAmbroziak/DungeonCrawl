@@ -10,9 +10,6 @@ namespace Codecool.DungeonCrawl
     /// </summary>
     public class Program
     {
-		/// <summary>
-		///     Singleton instance of Program
-		/// </summary>
         public static Program Instance;
 
         private Cell[,] _map;
