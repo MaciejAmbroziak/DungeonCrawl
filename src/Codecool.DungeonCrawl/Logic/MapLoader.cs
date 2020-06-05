@@ -63,15 +63,12 @@ namespace Codecool.DungeonCrawl.Logic
         /// </summary>
         /// <param name="c"></param>
         /// <returns></returns>
-        public static CellType GetCellType(char c)
+        public static CellType GetCellType(char c) => c switch
         {
-            return c switch
-            {
-                ' ' => CellType.Empty,
-                '#' => CellType.Wall,
-                _ => CellType.Empty
-            };
-        }
+            ' ' => CellType.Empty,
+            '#' => CellType.Wall,
+            _ => CellType.Empty
+        };
 
         /// <summary>
         ///     Assigns Actor based on given character
@@ -79,14 +76,11 @@ namespace Codecool.DungeonCrawl.Logic
         /// <param name="c"></param>
         /// <param name="cell"></param>
         /// <returns></returns>
-        public static Actor GetActor(char c, Cell cell)
+        public static Actor GetActor(char c, Cell cell) => c switch
         {
-            return c switch
-            {
-                's' => new Skeleton(cell),
-                'p' => new Player(cell),
-                _ => null
-            };
-        }
+            's' => new Skeleton(cell),
+            'p' => new Player(cell),
+            _ => null
+        };
     }
 }
