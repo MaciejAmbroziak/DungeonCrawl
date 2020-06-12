@@ -1,3 +1,5 @@
+using Codecool.DungeonCrawl.Logic.Interfaces;
+using Codecool.DungeonCrawl.Logic.Map;
 using Perlin;
 using Veldrid;
 
@@ -6,34 +8,54 @@ namespace Codecool.DungeonCrawl.Logic.Actors
     /// <summary>
     ///     The game player
     /// </summary>
-    public class Player : Actor
+    public class Player : Actor, IUpdatable
     {
-        public Player(Cell cell) : base(cell, TileSet.PlayerTile)
+        public Player(Cell cell) : base(cell, TileSet.GetTile(TileType.Player))
         {
+            Program.AllUpdatables.Add(this);
         }
 
-        public override void Update()
+        ~Player()
         {
-            // process inputs
+            Program.AllUpdatables.Remove(this);
+        }
+
+        public void Update(float deltaTime)
+        {
             if (KeyboardInput.IsKeyPressedThisFrame(Key.Up))
             {
-                // TODO
+                TryMove(Direction.Up);
             }
 
             if (KeyboardInput.IsKeyPressedThisFrame(Key.Down))
             {
-                // TODO
+                TryMove(Direction.Down);
             }
 
             if (KeyboardInput.IsKeyPressedThisFrame(Key.Left))
             {
-                // TODO
+                TryMove(Direction.Left);
             }
 
             if (KeyboardInput.IsKeyPressedThisFrame(Key.Right))
             {
-                // TODO
+                TryMove(Direction.Right);
             }
+        }
+
+        private void TryMove(Direction dir)
+        {
+            var targetCell = Cell.GetNeighbour(dir);
+            var canPass = targetCell?.OnCollision(this) ?? false;
+
+            if (canPass)
+                AssignCell(targetCell);
+        }
+
+        public override bool OnCollision(Actor other)
+        {
+            // TODO Receive damage logic
+            return false;
         }
     }
 }

@@ -1,3 +1,5 @@
+using Codecool.DungeonCrawl.Logic.Map;
+
 namespace Codecool.DungeonCrawl.Logic.Actors
 {
     /// <summary>
@@ -5,9 +7,15 @@ namespace Codecool.DungeonCrawl.Logic.Actors
     /// </summary>
     public class Skeleton : Actor
     {
-        public Skeleton(Cell cell) : base(cell, TileSet.SkeletonTile)
+        public Skeleton(Cell cell) : base(cell, TileSet.GetTile(TileType.Skeleton))
         {
             // TODO
+        }
+
+        public override bool OnCollision(Actor other)
+        {
+            // TODO receive damage logic
+            return false;
         }
     }
 }

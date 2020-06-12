@@ -2,7 +2,7 @@ using System.IO;
 using Codecool.DungeonCrawl.Logic.Actors;
 using Perlin.Display;
 
-namespace Codecool.DungeonCrawl.Logic
+namespace Codecool.DungeonCrawl.Logic.Map
 {
     /// <summary>
     ///     Helper class to load the map from the disk
@@ -28,7 +28,7 @@ namespace Codecool.DungeonCrawl.Logic
         /// </summary>
         /// <param name="cellParent"></param>
         /// <returns></returns>
-        public static Cell[,] LoadMap(DisplayObject cellParent)
+        public static GameMap LoadMap(DisplayObject cellParent)
         {
             var lines = File.ReadAllLines("map.txt");
             var dimensions = lines[0].Split(" ");
@@ -37,6 +37,7 @@ namespace Codecool.DungeonCrawl.Logic
 
             var cellGrid = new Cell[width, height];
 
+            // Cell creation loop
             for (var y = 0; y < height; y++)
             {
                 var line = lines[y + 1];
@@ -48,14 +49,25 @@ namespace Codecool.DungeonCrawl.Logic
                     var cellType = GetCellType(character);
                     var cell = new Cell(x, y, cellParent, cellType);
 
-                    // Actor creation and assignment
-                    cell.Actor = GetActor(character, cell);
-
                     cellGrid[x, y] = cell;
                 }
             }
 
-            return cellGrid;
+            // Actor creation loop
+            // Due to how rendering in this game works, we need to create all actors AFTER creating all cells
+            for (var y = 0; y < height; y++)
+            {
+                var line = lines[y + 1];
+                for (var x = 0; x < width; x++)
+                {
+                    var character = line[x];
+                    var cell = cellGrid[x, y];
+
+                    cell.Actor = GetActor(character, cell);
+                }
+            }
+
+            return new GameMap(cellGrid);
         }
 
         /// <summary>
@@ -63,11 +75,11 @@ namespace Codecool.DungeonCrawl.Logic
         /// </summary>
         /// <param name="c"></param>
         /// <returns></returns>
-        public static CellType GetCellType(char c) => c switch
+        public static TileType GetCellType(char c) => c switch
         {
-            ' ' => CellType.Empty,
-            '#' => CellType.Wall,
-            _ => CellType.Empty
+            ' ' => TileType.Empty,
+            '#' => TileType.Wall,
+            _ => TileType.Empty
         };
 
         /// <summary>

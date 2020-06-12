@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using Codecool.DungeonCrawl.Logic.Map;
 using Perlin.Display;
 using Perlin.Geom;
 
@@ -9,13 +9,9 @@ namespace Codecool.DungeonCrawl.Logic.Actors
     /// </summary>
     public abstract class Actor
     {
-        public static readonly List<Actor> AllActors = new List<Actor>();
-
         // default ctor
         protected Actor(Cell cell, Rectangle tile)
         {
-            AllActors.Add(this);
-
             Cell = cell;
             Cell.Actor = this;
 
@@ -27,32 +23,40 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             cell.Sprite.Parent.AddChild(Sprite);
         }
 
+        /// <summary>
+        ///     Invoked whenever another Actor attempts to walk onto this Actor's cell
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns>Whether the other Actor can pass</returns>
+        public virtual bool OnCollision(Actor other)
+        {
+            return true;
+        }
+
+        /// <summary>
+        ///     Removes given actor from the game
+        /// </summary>
+        public void Destroy()
+        {
+            Sprite.Parent.RemoveChild(Sprite);
+        }
+
         public Cell Cell { get; private set; }
 
-        public (float x, float y) Position
+        public (int x, int y) Position
         {
-            get => (Sprite.X / TileSet.Size / TileSet.Scale, Sprite.Y / TileSet.Size / TileSet.Scale);
+            get => _position;
             set
             {
+                _position = value;
                 Sprite.X = value.x * TileSet.Size * TileSet.Scale;
                 Sprite.Y = value.y * TileSet.Size * TileSet.Scale;
             }
         }
 
+        private (int x, int y) _position;
+
         public Sprite Sprite { get; set; }
-
-        // dtor
-        ~Actor()
-        {
-            AllActors.Remove(this);
-        }
-
-        /// <summary>
-        ///     Gets called every frame
-        /// </summary>
-        public virtual void Update()
-        {
-        }
 
         /// <summary>
         ///     Assign this Actor to given cell

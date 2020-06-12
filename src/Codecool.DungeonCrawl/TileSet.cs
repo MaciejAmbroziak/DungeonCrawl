@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Codecool.DungeonCrawl.Logic;
 using Perlin.Geom;
 
 namespace Codecool.DungeonCrawl
@@ -19,27 +18,28 @@ namespace Codecool.DungeonCrawl
         /// </summary>
         public const int Scale = 3;
 
-        public static readonly Rectangle PlayerTile;
-        public static readonly Rectangle SkeletonTile;
-
-        private static readonly Dictionary<CellType, Rectangle> TileMap;
+        private static readonly Dictionary<TileType, Rectangle> TileMap;
 
         static TileSet()
         {
-            TileMap = new Dictionary<CellType, Rectangle>
+            TileMap = new Dictionary<TileType, Rectangle>
             {
-                [CellType.Empty] = CreateTile(0, 0),
-                [CellType.Wall] = CreateTile(10, 17),
-                [CellType.Floor] = CreateTile(2, 0)
+                [TileType.Empty] = CreateTile(0, 0),
+                [TileType.Wall] = CreateTile(10, 17),
+                [TileType.Floor] = CreateTile(2, 0),
+                [TileType.Player] = CreateTile(27, 0),
+                [TileType.Skeleton] = CreateTile(29, 6)
             };
-
-            PlayerTile = CreateTile(27, 0);
-            SkeletonTile = CreateTile(29, 6);
         }
 
-        public static Rectangle GetCellTile(CellType cellType)
+        /// <summary>
+        ///     Returns tile rectange for given TileType
+        /// </summary>
+        /// <param name="tileType"></param>
+        /// <returns></returns>
+        public static Rectangle GetTile(TileType tileType)
         {
-            return TileMap[cellType];
+            return TileMap[tileType];
         }
 
         private static Rectangle CreateTile(int i, int j)
