@@ -55,6 +55,18 @@ namespace Codecool.DungeonCrawl.Logic.Map
             return Type.IsPassable() && (Actor?.OnCollision(other) ?? true);
         }
 
+        public bool OnEnter(Cell Other)
+        {
+            if (Other.Tilename == "Portal")
+                return true;
+            else
+            {
+                return false;
+            }
+        }
+
+
+
         /// <summary>
         ///     Returns a cell in the given distance
         /// </summary>
