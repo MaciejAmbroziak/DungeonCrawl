@@ -57,5 +57,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             // TODO Receive damage logic
             return false;
         }
+
+        
     }
 }

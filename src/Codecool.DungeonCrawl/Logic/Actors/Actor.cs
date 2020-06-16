@@ -64,11 +64,25 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         /// <param name="target"></param>
         public void AssignCell(Cell target)
         {
-            Cell.Actor = null;
-            Cell = target;
-            target.Actor = this;
+            if (target.Tilename != "Portal")
+            {
+                Cell.Actor = null;
+                Cell = target;
+                target.Actor = this; 
+                Position = target.Position;
+            }
+            else
+            {
+                System.Environment.Exit(0);
+            }
+                
 
-            Position = target.Position;
+            
         }
+
+        public void ExitPortal()
+        {
+        }
+
     }
 }
