@@ -7,6 +7,7 @@
         Floor,
         Player,
         Skeleton,
-        Portal
+        Portal,
+        Sword
     }
 }
