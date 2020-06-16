@@ -8,6 +8,7 @@
         Player,
         Skeleton,
         Portal,
-        Sword
+        Sword,
+        Health
     }
 }

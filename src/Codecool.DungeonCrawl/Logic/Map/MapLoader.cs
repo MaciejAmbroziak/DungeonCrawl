@@ -84,6 +84,7 @@ namespace Codecool.DungeonCrawl.Logic.Map
             'p' => TileType.Floor,
             'G' => TileType.Portal,
             'w' => TileType.Sword,
+            'h' => TileType.Health,
             _ => TileType.Empty
         };
 

@@ -25,8 +25,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         {
             Program.AllUpdatables.Remove(this);
         }
-
-        public List<Player> Inventory;
+        
         public void Update(float deltaTime)
         {
             if (KeyboardInput.IsKeyPressedThisFrame(Key.Up))
@@ -69,7 +68,6 @@ namespace Codecool.DungeonCrawl.Logic.Actors
                     other.Destroy();
                     return true;
                 }
-                
             }
             return false;
         }

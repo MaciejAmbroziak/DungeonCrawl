@@ -10,6 +10,7 @@
       <e p="Logic" t="Include">
         <e p="Actors" t="Include">
           <e p="Actor.cs" t="Include" />
+          <e p="Health.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="Skeleton.cs" t="Include" />
           <e p="Sword.cs" t="Include" />

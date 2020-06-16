@@ -19,7 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa03e200-f887-4c4f-8350-8b013ed7db59" name="Default Changelist" comment="" />
+    <list default="true" id="fa03e200-f887-4c4f-8350-8b013ed7db59" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Logic/Actors/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/map.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Codecool.DungeonCrawl/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Codecool.DungeonCrawl/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Codecool.DungeonCrawl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Codecool.DungeonCrawl/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Actors/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Actors/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Actors/Sword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Actors/Sword.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Map/MapLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Map/MapLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TileSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TileSet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TileType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TileType.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,26 +41,32 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Logic/Actors/Actor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Interfaces/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Direction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Utilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TileSet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Sword.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TileType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Map/GameMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Map/MapLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Map/Cell.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Actors/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Actors/Sword.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Actors/Skeleton.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TileSet.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Actor.cs" />
         <option value="$PROJECT_DIR$/Logic/Combat.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Player.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Skeleton.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Actor.cs" />
+        <option value="$PROJECT_DIR$/TileType.cs" />
+        <option value="$PROJECT_DIR$/Logic/Map/MapLoader.cs" />
+        <option value="$PROJECT_DIR$/../../data/map.txt" />
+        <option value="$PROJECT_DIR$/TileSet.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Sword.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Health.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Player.cs" />
       </list>
     </option>
   </component>
@@ -98,6 +114,7 @@
       <updated>1592298413205</updated>
       <workItem from="1592298430036" duration="7139000" />
       <workItem from="1592329632800" duration="474000" />
+      <workItem from="1592334771540" duration="3111000" />
     </task>
     <servers />
   </component>
@@ -122,25 +139,29 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1592329992701">
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom" timestamp="1592337761347">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1592329992701" />
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1592337761347" />
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1592337212655" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1592312392833" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1592329992700">
+    <state width="1238" height="180" key="GridCell.Tab.0.center" timestamp="1592337761346">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1592329992700" />
+    <state width="1238" height="180" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1592337761346" />
+    <state width="1238" height="180" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1592337212654" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1592312392832" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1592329992699">
+    <state width="1238" height="180" key="GridCell.Tab.0.left" timestamp="1592337761345">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1592329992699" />
+    <state width="1238" height="180" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1592337761345" />
+    <state width="1238" height="180" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1592337212653" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1592312392830" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1592329992701">
+    <state width="1238" height="180" key="GridCell.Tab.0.right" timestamp="1592337761346">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1592329992701" />
+    <state width="1238" height="180" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1592337761346" />
+    <state width="1238" height="180" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1592337212654" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1592312392833" />
   </component>
 </project>
