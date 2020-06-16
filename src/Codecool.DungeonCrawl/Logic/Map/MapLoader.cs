@@ -79,6 +79,9 @@ namespace Codecool.DungeonCrawl.Logic.Map
         {
             ' ' => TileType.Empty,
             '#' => TileType.Wall,
+            '.' => TileType.Floor,
+            's' => TileType.Floor,
+            'p' => TileType.Floor,
             _ => TileType.Empty
         };
 
