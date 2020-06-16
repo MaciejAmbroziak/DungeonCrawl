@@ -82,6 +82,7 @@ namespace Codecool.DungeonCrawl.Logic.Map
             '.' => TileType.Floor,
             's' => TileType.Floor,
             'p' => TileType.Floor,
+            'c' => TileType.Floor,
             'G' => TileType.Portal,
             _ => TileType.Empty
         };
@@ -96,6 +97,7 @@ namespace Codecool.DungeonCrawl.Logic.Map
         {
             's' => new Skeleton(cell),
             'p' => new Player(cell),
+            'c' => new Chicken(cell, true),
             _ => null
         };
     }

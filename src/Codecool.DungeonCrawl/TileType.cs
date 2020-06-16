@@ -7,6 +7,8 @@
         Floor,
         Player,
         Skeleton,
-        Portal
+        Portal,
+        Chicken,
+        Egg
     }
 }
