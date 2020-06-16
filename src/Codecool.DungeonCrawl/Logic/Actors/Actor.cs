@@ -56,6 +56,10 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
         private (int x, int y) _position;
 
+        public int Health { get; set; }
+        public int Attack { get; set; }
+        public int Defense { get; set; }
+
         public Sprite Sprite { get; set; }
 
         /// <summary>

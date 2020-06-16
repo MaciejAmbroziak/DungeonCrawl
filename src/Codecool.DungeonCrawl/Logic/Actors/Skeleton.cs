@@ -15,6 +15,9 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         public Skeleton(Cell cell) : base(cell, TileSet.GetTile(TileType.Skeleton))
         {
             Program.AllUpdatables.Add(this);
+            Health = 60;
+            Attack = 40;
+            Defense = 20;
         }
 
         ~Skeleton()
@@ -53,7 +56,15 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
         public override bool OnCollision(Actor other)
         {
-            // TODO receive damage logic
+            if (other.GetType() == typeof(Player))
+            { 
+                other.Health -= this.Attack - other.Defense;
+                if (other.Health <= 0)
+                {
+                    other.Destroy();
+                    return true;
+                }
+            }
             return false;
         }
     }
