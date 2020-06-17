@@ -19,31 +19,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa03e200-f887-4c4f-8350-8b013ed7db59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Codecool.DungeonCrawl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Codecool.DungeonCrawl/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/Actors/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Actors/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/Actors/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Actors/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/Actors/Skeleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Actors/Skeleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/Actors/Sword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Actors/Sword.cs" afterDir="false" />
-    </list>
+    <list default="true" id="fa03e200-f887-4c4f-8350-8b013ed7db59" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="Tomek" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Logic/Actors/Actor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Interfaces/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Actors/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Troll.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Direction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Utilities.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Chicken.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TileSet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Actors/Sword.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TileType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Bush.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Map/GameMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Map/MapLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Map/Cell.cs" root0="FORCE_HIGHLIGHTING" />
@@ -60,8 +62,9 @@
         <option value="$PROJECT_DIR$/Logic/Actors/Actor.cs" />
         <option value="$PROJECT_DIR$/Logic/Map/MapLoader.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Skeleton.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Player.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Sword.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Player.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Chicken.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Health.cs" />
       </list>
     </option>
@@ -114,7 +117,7 @@
       <workItem from="1592329632800" duration="474000" />
       <workItem from="1592334771540" duration="3834000" />
       <workItem from="1592379910527" duration="1467000" />
-      <workItem from="1592396268000" duration="859000" />
+      <workItem from="1592396268000" duration="3095000" />
     </task>
     <servers />
   </component>
@@ -139,30 +142,38 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="113" key="GridCell.Tab.0.bottom" timestamp="1592385425191">
+    <state width="1238" height="116" key="GridCell.Tab.0.bottom" timestamp="1592399916259">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="113" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1592385425191" />
+    <state width="1238" height="116" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1592399916259" />
     <state width="1238" height="178" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1592339497951" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1592312392833" />
-    <state width="1238" height="113" key="GridCell.Tab.0.center" timestamp="1592385425190">
+    <state width="1238" height="98" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1592397364761" />
+    <state width="1238" height="98" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1592398115437" />
+    <state width="1238" height="116" key="GridCell.Tab.0.center" timestamp="1592399916257">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="113" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1592385425190" />
+    <state width="1238" height="116" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1592399916257" />
     <state width="1238" height="178" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1592339497950" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1592312392832" />
-    <state width="1238" height="113" key="GridCell.Tab.0.left" timestamp="1592385425189">
+    <state width="1238" height="98" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1592397364760" />
+    <state width="1238" height="98" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1592398115428" />
+    <state width="1238" height="116" key="GridCell.Tab.0.left" timestamp="1592399916255">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="113" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1592385425189" />
+    <state width="1238" height="116" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1592399916255" />
     <state width="1238" height="178" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1592339497949" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1592312392830" />
-    <state width="1238" height="113" key="GridCell.Tab.0.right" timestamp="1592385425190">
+    <state width="1238" height="98" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1592397364759" />
+    <state width="1238" height="98" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1592398115414" />
+    <state width="1238" height="116" key="GridCell.Tab.0.right" timestamp="1592399916258">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="113" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1592385425190" />
+    <state width="1238" height="116" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1592399916258" />
     <state width="1238" height="178" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1592339497951" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1592312392833" />
+    <state width="1238" height="98" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1592397364760" />
+    <state width="1238" height="98" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1592398115430" />
     <state width="1238" height="291" key="GridCell.Tab.1.bottom" timestamp="1592385425175">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

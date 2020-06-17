@@ -16,7 +16,6 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             if (other is Player)
             {
                 other.Health += this.Health;
-                Console.WriteLine($"Players health: {other.Health}");
                 this.Destroy();
                 return true;
             }
