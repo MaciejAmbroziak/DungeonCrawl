@@ -60,9 +60,10 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
         public override bool OnCollision(Actor other)
         {
-            if (other.GetType() == typeof(Skeleton))
+            if (other is Skeleton)
             { 
                 other.Health -= this.Attack - other.Defense;
+                Console.WriteLine($"Me: {this.Health}, Skeleton: {other.Health}");
                 if (other.Health <= 0)
                 {
                     other.Destroy();

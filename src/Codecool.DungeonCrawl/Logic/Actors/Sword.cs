@@ -7,26 +7,16 @@ using Codecool.DungeonCrawl.Logic.Interfaces;
 
 namespace Codecool.DungeonCrawl.Logic.Actors
 {
-    class Sword : Actor, IUpdatable
+    class Sword : Actor
     {
         public Sword(Cell cell) : base(cell, TileSet.GetTile(TileType.Sword))
         {
-            Program.AllUpdatables.Add(this);
             Attack = 30;
         }
         
-        ~Sword()
-        {
-            Program.AllUpdatables.Remove(this);
-        }
-
-        public void Update(float deltaTime)
-        {
-        }
-
         public override bool OnCollision(Actor other)
         {
-            if (other.GetType() == typeof(Player))
+            if (other is Player)
             {
                 other.Attack += this.Attack;
                 this.Destroy();
