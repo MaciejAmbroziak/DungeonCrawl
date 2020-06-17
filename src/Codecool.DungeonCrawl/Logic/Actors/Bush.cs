@@ -7,6 +7,8 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         public Bush(Cell cell) : base(cell, TileSet.GetTile(TileType.Bush))
         {
             Health = 1500;
+            Attack = 1;
+            Defense = 1;
         }
         
         public override bool OnCollision(Actor other)

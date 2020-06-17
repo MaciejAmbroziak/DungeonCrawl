@@ -19,7 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa03e200-f887-4c4f-8350-8b013ed7db59" name="Default Changelist" comment="" />
+    <list default="true" id="fa03e200-f887-4c4f-8350-8b013ed7db59" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../data/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/map.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Codecool.DungeonCrawl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Codecool.DungeonCrawl/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Actors/Bush.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Actors/Bush.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Actors/Hatchet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Actors/Hatchet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Actors/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Actors/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Actors/Shield.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Actors/Shield.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Actors/Sword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Actors/Sword.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,20 +69,21 @@
         <option value="$PROJECT_DIR$/Logic/Combat.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Actor.cs" />
         <option value="$PROJECT_DIR$/Logic/Map/Cell.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Sword.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Egg.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Player.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Bush.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Chicken.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Hatchet.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Health.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Skeleton.cs" />
         <option value="$PROJECT_DIR$/Program.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Shield.cs" />
         <option value="$PROJECT_DIR$/../../data/map.txt" />
         <option value="$PROJECT_DIR$/Logic/Map/MapLoader.cs" />
         <option value="$PROJECT_DIR$/TileType.cs" />
         <option value="$PROJECT_DIR$/TileSet.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Bush.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Hatchet.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Shield.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Sword.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Health.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Troll.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Skeleton.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Egg.cs" />
       </list>
     </option>
   </component>
@@ -126,7 +135,8 @@
       <workItem from="1592329632800" duration="474000" />
       <workItem from="1592334771540" duration="3834000" />
       <workItem from="1592379910527" duration="1467000" />
-      <workItem from="1592396268000" duration="5925000" />
+      <workItem from="1592396268000" duration="6564000" />
+      <workItem from="1592423418047" duration="1557000" />
     </task>
     <servers />
   </component>
@@ -151,34 +161,34 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="115" key="GridCell.Tab.0.bottom" timestamp="1592403167882">
+    <state width="1238" height="115" key="GridCell.Tab.0.bottom" timestamp="1592425221898">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="115" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1592403167882" />
+    <state width="1238" height="115" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1592425221898" />
     <state width="1238" height="178" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1592339497951" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1592312392833" />
     <state width="1238" height="98" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1592397364761" />
     <state width="1238" height="98" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1592398115437" />
-    <state width="1238" height="115" key="GridCell.Tab.0.center" timestamp="1592403167881">
+    <state width="1238" height="115" key="GridCell.Tab.0.center" timestamp="1592425221897">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="115" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1592403167881" />
+    <state width="1238" height="115" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1592425221897" />
     <state width="1238" height="178" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1592339497950" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1592312392832" />
     <state width="1238" height="98" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1592397364760" />
     <state width="1238" height="98" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1592398115428" />
-    <state width="1238" height="115" key="GridCell.Tab.0.left" timestamp="1592403167878">
+    <state width="1238" height="115" key="GridCell.Tab.0.left" timestamp="1592425221897">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="115" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1592403167878" />
+    <state width="1238" height="115" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1592425221897" />
     <state width="1238" height="178" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1592339497949" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1592312392830" />
     <state width="1238" height="98" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1592397364759" />
     <state width="1238" height="98" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1592398115414" />
-    <state width="1238" height="115" key="GridCell.Tab.0.right" timestamp="1592403167881">
+    <state width="1238" height="115" key="GridCell.Tab.0.right" timestamp="1592425221898">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="115" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1592403167881" />
+    <state width="1238" height="115" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1592425221898" />
     <state width="1238" height="178" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1592339497951" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1592312392833" />
     <state width="1238" height="98" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1592397364760" />
@@ -247,5 +257,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="291" key="GridCell.Tab.4.right/0.0.1280.800@0.0.1280.800" timestamp="1592385425181" />
+    <state x="100" y="100" width="1080" height="600" key="VCS.FileHistoryDialog" timestamp="1592424147961">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="100" y="100" width="1080" height="600" key="VCS.FileHistoryDialog/0.0.1280.800@0.0.1280.800" timestamp="1592424147961" />
   </component>
 </project>
