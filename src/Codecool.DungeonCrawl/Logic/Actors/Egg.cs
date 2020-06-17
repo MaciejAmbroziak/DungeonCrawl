@@ -36,10 +36,10 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 		{
 			if (!(other is Chicken))
 			{
-				other.Health -= this.Attack - other.Defense;
-				if (other.Health <= 0)
+				this.Health -= other.Attack - this.Defense;
+				if (this.Health <= 0)
 				{
-					other.Destroy();
+					this.Destroy();
 					return true;
 				}
 			}
