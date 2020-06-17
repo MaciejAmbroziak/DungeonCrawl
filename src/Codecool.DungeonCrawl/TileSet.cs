@@ -16,7 +16,7 @@ namespace Codecool.DungeonCrawl
         /// <summary>
         ///     Scale of the game (used as a multiplier)
         /// </summary>
-        public const int Scale = 3;
+        public const int Scale = 2;
 
         private static readonly Dictionary<TileType, Rectangle> TileMap;
 
@@ -30,6 +30,8 @@ namespace Codecool.DungeonCrawl
                 [TileType.Player] = CreateTile(27, 0),
                 [TileType.Skeleton] = CreateTile(29, 6),
                 [TileType.Portal] = CreateTile(22,11),
+                [TileType.Sword] = CreateTile(3, 29),
+                [TileType.Health] = CreateTile(27, 23),
                 [TileType.Chicken] = CreateTile(26,7),
                 [TileType.Egg] = CreateTile(18, 29)
             };

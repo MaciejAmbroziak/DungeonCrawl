@@ -8,6 +8,8 @@
         Player,
         Skeleton,
         Portal,
+        Sword,
+        Health
         Chicken,
         Egg
     }

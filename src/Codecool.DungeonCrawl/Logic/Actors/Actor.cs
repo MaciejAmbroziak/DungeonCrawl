@@ -38,7 +38,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         /// </summary>
         public void Destroy()
         {
-            Sprite.Parent.RemoveChild(Sprite);
+            Sprite?.Parent?.RemoveChild(Sprite);
         }
 
         public Cell Cell { get; private set; }
@@ -55,6 +55,10 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         }
 
         private (int x, int y) _position;
+
+        public int Health { get; set; }
+        public int Attack { get; set; }
+        public int Defense { get; set; }
 
         public Sprite Sprite { get; set; }
 

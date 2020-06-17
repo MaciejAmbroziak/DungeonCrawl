@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using Codecool.DungeonCrawl.Logic.Interfaces;
 using Codecool.DungeonCrawl.Logic.Map;
 using Perlin;
@@ -13,13 +16,16 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         public Player(Cell cell) : base(cell, TileSet.GetTile(TileType.Player))
         {
             Program.AllUpdatables.Add(this);
+            Health = 100;
+            Attack = 50;
+            Defense = 30;
         }
 
         ~Player()
         {
             Program.AllUpdatables.Remove(this);
         }
-
+        
         public void Update(float deltaTime)
         {
             if (KeyboardInput.IsKeyPressedThisFrame(Key.Up))
@@ -54,10 +60,17 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
         public override bool OnCollision(Actor other)
         {
-            // TODO Receive damage logic
+            if (other is Skeleton)
+            { 
+                other.Health -= this.Attack - other.Defense;
+                Console.WriteLine($"Me: {this.Health}, Skeleton: {other.Health}");
+                if (other.Health <= 0)
+                {
+                    other.Destroy();
+                    return true;
+                }
+            }
             return false;
         }
-
-        
     }
 }
