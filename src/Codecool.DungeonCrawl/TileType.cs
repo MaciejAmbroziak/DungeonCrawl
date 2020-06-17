@@ -9,7 +9,7 @@
         Skeleton,
         Portal,
         Sword,
-        Health
+        Health,
         Chicken,
         Egg
     }

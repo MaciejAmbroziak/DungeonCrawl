@@ -46,7 +46,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
             TryMove(dir);
 
-            if (_timeLastEgg < 5.00f || _breedable == false)
+            if (_timeLastEgg < 10.00f || _breedable == false)
                 return;
 
             Program.AllUpdatables.Add(new Egg(Cell.GetNeighbour((1,0).ToDirection())));
