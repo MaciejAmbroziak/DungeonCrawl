@@ -1,4 +1,4 @@
- using System;
+using System;
 using Codecool.DungeonCrawl.Logic.Interfaces;
 using Codecool.DungeonCrawl.Logic.Map;
 

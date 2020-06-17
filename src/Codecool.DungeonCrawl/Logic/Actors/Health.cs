@@ -1,6 +1,4 @@
-using System;
 using Codecool.DungeonCrawl.Logic.Map;
-using Perlin.Geom;
 
 namespace Codecool.DungeonCrawl.Logic.Actors
 {

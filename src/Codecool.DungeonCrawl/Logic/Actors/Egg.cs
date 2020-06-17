@@ -1,9 +1,5 @@
 ﻿using Codecool.DungeonCrawl.Logic.Interfaces;
 using Codecool.DungeonCrawl.Logic.Map;
-using System;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using System.Text;
 
 namespace Codecool.DungeonCrawl.Logic.Actors
 {
@@ -38,7 +34,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
 		public override bool OnCollision(Actor other)
 		{
-			if (other is Player)
+			if (!(other is Chicken))
 			{
 				other.Health -= this.Attack - other.Defense;
 				if (other.Health <= 0)
