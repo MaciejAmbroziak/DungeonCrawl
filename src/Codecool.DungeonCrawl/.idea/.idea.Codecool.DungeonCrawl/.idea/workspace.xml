@@ -38,6 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Logic/Interfaces/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Actors/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Actors/Troll.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Hatchet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Actors/Egg.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Direction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Utilities.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TileType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Actors/Bush.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Shield.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Map/GameMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Map/MapLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Map/Cell.cs" root0="FORCE_HIGHLIGHTING" />
@@ -57,19 +59,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Logic/Combat.cs" />
-        <option value="$PROJECT_DIR$/TileType.cs" />
-        <option value="$PROJECT_DIR$/../../data/map.txt" />
-        <option value="$PROJECT_DIR$/TileSet.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Actor.cs" />
-        <option value="$PROJECT_DIR$/Logic/Map/MapLoader.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Skeleton.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Sword.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Chicken.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Health.cs" />
         <option value="$PROJECT_DIR$/Logic/Map/Cell.cs" />
-        <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Sword.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Egg.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Player.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Bush.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Chicken.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Hatchet.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Health.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Skeleton.cs" />
+        <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Shield.cs" />
+        <option value="$PROJECT_DIR$/../../data/map.txt" />
+        <option value="$PROJECT_DIR$/Logic/Map/MapLoader.cs" />
+        <option value="$PROJECT_DIR$/TileType.cs" />
+        <option value="$PROJECT_DIR$/TileSet.cs" />
       </list>
     </option>
   </component>
@@ -121,7 +126,7 @@
       <workItem from="1592329632800" duration="474000" />
       <workItem from="1592334771540" duration="3834000" />
       <workItem from="1592379910527" duration="1467000" />
-      <workItem from="1592396268000" duration="4533000" />
+      <workItem from="1592396268000" duration="5925000" />
     </task>
     <servers />
   </component>
@@ -146,34 +151,34 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="115" key="GridCell.Tab.0.bottom" timestamp="1592401723892">
+    <state width="1238" height="115" key="GridCell.Tab.0.bottom" timestamp="1592403167882">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="115" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1592401723892" />
+    <state width="1238" height="115" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1592403167882" />
     <state width="1238" height="178" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1592339497951" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1592312392833" />
     <state width="1238" height="98" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1592397364761" />
     <state width="1238" height="98" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1592398115437" />
-    <state width="1238" height="115" key="GridCell.Tab.0.center" timestamp="1592401723871">
+    <state width="1238" height="115" key="GridCell.Tab.0.center" timestamp="1592403167881">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="115" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1592401723871" />
+    <state width="1238" height="115" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1592403167881" />
     <state width="1238" height="178" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1592339497950" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1592312392832" />
     <state width="1238" height="98" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1592397364760" />
     <state width="1238" height="98" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1592398115428" />
-    <state width="1238" height="115" key="GridCell.Tab.0.left" timestamp="1592401723857">
+    <state width="1238" height="115" key="GridCell.Tab.0.left" timestamp="1592403167878">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="115" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1592401723857" />
+    <state width="1238" height="115" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1592403167878" />
     <state width="1238" height="178" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1592339497949" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1592312392830" />
     <state width="1238" height="98" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1592397364759" />
     <state width="1238" height="98" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1592398115414" />
-    <state width="1238" height="115" key="GridCell.Tab.0.right" timestamp="1592401723878">
+    <state width="1238" height="115" key="GridCell.Tab.0.right" timestamp="1592403167881">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="115" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1592401723878" />
+    <state width="1238" height="115" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1592403167881" />
     <state width="1238" height="178" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1592339497951" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1592312392833" />
     <state width="1238" height="98" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1592397364760" />

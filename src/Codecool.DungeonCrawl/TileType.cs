@@ -14,6 +14,7 @@
         Egg,
         Troll,
         Bush,
-        Hatchet
+        Hatchet,
+        Shield
     }
 }

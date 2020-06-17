@@ -90,6 +90,7 @@ namespace Codecool.DungeonCrawl.Logic.Map
             't' => TileType.Floor,
             'b' => TileType.Floor,
             'a' => TileType.Floor,
+            'S' => TileType.Floor,
             _ => TileType.Empty
         };
 
@@ -109,6 +110,7 @@ namespace Codecool.DungeonCrawl.Logic.Map
             't' => new Troll(cell),
             'b' => new Bush(cell),
             'a' => new Hatchet(cell),
+            'S' => new Shield(cell),
             _ => null
         };
     }

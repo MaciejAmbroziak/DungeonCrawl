@@ -36,7 +36,8 @@ namespace Codecool.DungeonCrawl
                 [TileType.Egg] = CreateTile(18, 29),
                 [TileType.Troll] = CreateTile(30,6),
                 [TileType.Bush] = CreateTile(1,2),
-                [TileType.Hatchet] = CreateTile(10,29)
+                [TileType.Hatchet] = CreateTile(10,29),
+                [TileType.Shield] = CreateTile(7,26)
             };
         }
 
