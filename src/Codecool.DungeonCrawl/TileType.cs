@@ -15,6 +15,8 @@
         Troll,
         Bush,
         Hatchet,
-        Shield
+        Shield, 
+        Door,
+        DoorKey
     }
 }

@@ -37,7 +37,9 @@ namespace Codecool.DungeonCrawl
                 [TileType.Troll] = CreateTile(30,6),
                 [TileType.Bush] = CreateTile(1,2),
                 [TileType.Hatchet] = CreateTile(10,29),
-                [TileType.Shield] = CreateTile(7,26)
+                [TileType.Shield] = CreateTile(7,26),
+                [TileType.Door] = CreateTile(4, 9),
+                [TileType.DoorKey] = CreateTile(16, 23)
             };
         }
 

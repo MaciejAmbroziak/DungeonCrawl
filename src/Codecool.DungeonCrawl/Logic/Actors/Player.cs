@@ -66,6 +66,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
                     return true;
                 }
             }
+           
             return false;
         }
 
