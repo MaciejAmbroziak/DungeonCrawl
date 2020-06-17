@@ -60,7 +60,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
         public override bool OnCollision(Actor other)
         {
-            if (other.GetType().Name == "Skeleton" || other.GetType().Name == "Troll" )
+            if (other is Skeleton || other is Troll || other is Chicken )
             { 
                 other.Health -= this.Attack - other.Defense;
                 Console.WriteLine($"Me: {this.Health}, {other.GetType().Name}: {other.Health}");
@@ -72,6 +72,6 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             }
             return false;
         }
-        
+
     }
 }

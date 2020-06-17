@@ -29,7 +29,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         {
             _timeLastMove += deltaTime;
 
-            if (_timeLastMove <= 0.6f)
+            if (_timeLastMove <= 0.7f)
                 return;
 
             _timeLastMove = 0.0f;
@@ -56,7 +56,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
         public override bool OnCollision(Actor other)
         {
-            if (other.GetType().Name == "Player" || other.GetType().Name == "Skeleton")
+            if (!(other is Troll))
             {
                 other.Health -= this.Attack - other.Defense;
                 if (other.Health <= 0)
