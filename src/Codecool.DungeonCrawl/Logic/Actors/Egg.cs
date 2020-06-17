@@ -13,7 +13,10 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
 		public Egg(Cell cell) :base(cell, TileSet.GetTile(TileType.Egg))
 		{
-
+			Program.AllUpdatables.Add(this);
+			Health = 5;
+			Attack = 0;
+			Defense = 10;
 		}
 
 		~Egg()
@@ -35,7 +38,15 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
 		public override bool OnCollision(Actor other)
 		{
-			// TODO receive damage logic
+			if (other is Player)
+			{
+				other.Health -= this.Attack - other.Defense;
+				if (other.Health <= 0)
+				{
+					other.Destroy();
+					return true;
+				}
+			}
 			return false;
 		}
 	}

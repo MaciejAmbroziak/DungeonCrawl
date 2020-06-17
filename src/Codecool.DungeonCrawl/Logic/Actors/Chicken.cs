@@ -19,7 +19,10 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 		{
             _breedable = breedable;
             Program.AllUpdatables.Add(this);
-		}
+            Health = 20;
+            Attack = 10;
+            Defense = 10;
+        }
 
         ~Chicken()
 		{
@@ -65,7 +68,15 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
         public override bool OnCollision(Actor other)
         {
-            // TODO receive damage logic
+            if (other is Player)
+            {
+                other.Health -= this.Attack - other.Defense;
+                if (other.Health <= 0)
+                {
+                    other.Destroy();
+                    return true;
+                }
+            }
             return false;
         }
     }
