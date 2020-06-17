@@ -19,6 +19,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             if (other is Player)
             {
                 other.Attack += this.Attack;
+                Console.WriteLine($"Players attack: {other.Attack}");
                 this.Destroy();
                 return true;
             }

@@ -18,7 +18,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             Program.AllUpdatables.Add(this);
             Health = 100;
             Attack = 50;
-            Defense = 30;
+            Defense = 20;
         }
 
         ~Player()
@@ -63,7 +63,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             if (other is Skeleton)
             { 
                 other.Health -= this.Attack - other.Defense;
-                Console.WriteLine($"Me: {this.Health}, Skeleton: {other.Health}");
+                Console.WriteLine($"Fight! Me: {this.Health}, Skeleton: {other.Health}");
                 if (other.Health <= 0)
                 {
                     other.Destroy();

@@ -17,7 +17,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             Program.AllUpdatables.Add(this);
             Health = 60;
             Attack = 40;
-            Defense = 20;
+            Defense = 30;
         }
 
         ~Skeleton()
