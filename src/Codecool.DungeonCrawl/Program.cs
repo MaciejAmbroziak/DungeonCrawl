@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Codecool.DungeonCrawl.Logic.Interfaces;
 using Codecool.DungeonCrawl.Logic.Map;
 using Perlin;
@@ -13,7 +14,7 @@ namespace Codecool.DungeonCrawl
     {
         public static GameMap Map { get; private set; }
 
-        public static readonly List<IUpdatable> AllUpdatables = new List<IUpdatable>();
+        public static List<IUpdatable> AllUpdatables = new List<IUpdatable>();
 
         private static Sprite _mapContainer;
 
@@ -64,7 +65,14 @@ namespace Codecool.DungeonCrawl
         /// <param name="deltaTime"></param>
         private static void StageOnEnterFrameEvent(DisplayObject target, float deltaTime)
         {
-            AllUpdatables.ForEach(x => x.Update(deltaTime));
+			try
+			{
+				AllUpdatables.ForEach(x => x.Update(deltaTime));
+			}
+			catch (System.Exception)
+			{
+				System.Console.WriteLine("List change mid for loop");
+			}
         }
     }
 }
