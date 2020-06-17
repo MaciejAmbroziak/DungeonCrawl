@@ -59,10 +59,7 @@ namespace Codecool.DungeonCrawl.Logic.Map
         {
             if (Other.Tilename == "Portal")
                 return true;
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
 

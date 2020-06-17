@@ -1,6 +1,7 @@
 using System.IO;
 using Codecool.DungeonCrawl.Logic.Actors;
 using Perlin.Display;
+using SixLabors.ImageSharp.Processing;
 
 namespace Codecool.DungeonCrawl.Logic.Map
 {
@@ -84,7 +85,12 @@ namespace Codecool.DungeonCrawl.Logic.Map
             'p' => TileType.Floor,
             'w' => TileType.Floor,
             'h' => TileType.Floor,
+            'c' => TileType.Floor,
             'G' => TileType.Portal,
+            't' => TileType.Floor,
+            'b' => TileType.Floor,
+            'a' => TileType.Floor,
+            'S' => TileType.Floor,
             _ => TileType.Empty
         };
 
@@ -100,6 +106,11 @@ namespace Codecool.DungeonCrawl.Logic.Map
             'p' => new Player(cell),
             'w' => new Sword(cell),
             'h' => new Health(cell),
+            'c' => new Chicken(cell, true),
+            't' => new Troll(cell),
+            'b' => new Bush(cell),
+            'a' => new Hatchet(cell),
+            'S' => new Shield(cell),
             _ => null
         };
     }

@@ -72,21 +72,15 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             {
                 Cell.Actor = null;
                 Cell = target;
-                target.Actor = this; 
+                target.Actor = this;
                 Position = target.Position;
             }
-            else
+
+            if (target.Tilename == "Portal" && this.GetType().Name == "Player")
             {
                 System.Environment.Exit(0);
             }
-                
-
-            
         }
-
-        public void ExitPortal()
-        {
-        }
-
+        public bool hasHatchet = false;
     }
 }

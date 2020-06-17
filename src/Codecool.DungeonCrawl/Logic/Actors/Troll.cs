@@ -1,26 +1,26 @@
-using System;
+﻿using System;
 using Codecool.DungeonCrawl.Logic.Interfaces;
 using Codecool.DungeonCrawl.Logic.Map;
 
 namespace Codecool.DungeonCrawl.Logic.Actors
 {
     /// <summary>
-    ///     Sample enemy
+    ///     Alpha enemy
     /// </summary>
-    public class Skeleton : Actor, IUpdatable
+    public class Troll : Actor, IUpdatable
     {
         private static readonly Random _random = new Random();
         private float _timeLastMove;
 
-        public Skeleton(Cell cell) : base(cell, TileSet.GetTile(TileType.Skeleton))
+        public Troll(Cell cell) : base(cell, TileSet.GetTile(TileType.Troll))
         {
             Program.AllUpdatables.Add(this);
-            Health = 60;
-            Attack = 40;
+            Health = 120;
+            Attack = 60;
             Defense = 30;
         }
 
-        ~Skeleton()
+        ~Troll()
         {
             Program.AllUpdatables.Remove(this);
         }
@@ -29,7 +29,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         {
             _timeLastMove += deltaTime;
 
-            if (_timeLastMove <= 0.25f)
+            if (_timeLastMove <= 0.7f)
                 return;
 
             _timeLastMove = 0.0f;
@@ -56,8 +56,8 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
         public override bool OnCollision(Actor other)
         {
-            if (!(other is Skeleton))
-            { 
+            if (!(other is Troll))
+            {
                 other.Health -= this.Attack - other.Defense;
                 if (other.Health <= 0)
                 {
@@ -65,6 +65,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
                     return true;
                 }
             }
+
             return false;
         }
     }

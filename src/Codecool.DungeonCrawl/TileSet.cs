@@ -32,6 +32,12 @@ namespace Codecool.DungeonCrawl
                 [TileType.Portal] = CreateTile(22,11),
                 [TileType.Sword] = CreateTile(3, 29),
                 [TileType.Health] = CreateTile(27, 23),
+                [TileType.Chicken] = CreateTile(26,7),
+                [TileType.Egg] = CreateTile(18, 29),
+                [TileType.Troll] = CreateTile(30,6),
+                [TileType.Bush] = CreateTile(1,2),
+                [TileType.Hatchet] = CreateTile(10,29),
+                [TileType.Shield] = CreateTile(7,26)
             };
         }
 

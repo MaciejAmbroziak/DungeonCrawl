@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using Codecool.DungeonCrawl.Logic.Interfaces;
 using Codecool.DungeonCrawl.Logic.Map;
 using Perlin;
@@ -60,10 +57,9 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
         public override bool OnCollision(Actor other)
         {
-            if (other is Skeleton)
+            if (other is Skeleton || other is Troll || other is Chicken || other is Egg)
             { 
                 other.Health -= this.Attack - other.Defense;
-                Console.WriteLine($"Fight! Me: {this.Health}, Skeleton: {other.Health}");
                 if (other.Health <= 0)
                 {
                     other.Destroy();
@@ -72,5 +68,6 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             }
             return false;
         }
+
     }
 }

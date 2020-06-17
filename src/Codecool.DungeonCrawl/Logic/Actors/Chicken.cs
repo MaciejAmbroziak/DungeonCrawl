@@ -1,35 +1,38 @@
-using System;
-using Codecool.DungeonCrawl.Logic.Interfaces;
+﻿using Codecool.DungeonCrawl.Logic.Interfaces;
 using Codecool.DungeonCrawl.Logic.Map;
+using System;
 
 namespace Codecool.DungeonCrawl.Logic.Actors
 {
-    /// <summary>
-    ///     Sample enemy
-    /// </summary>
-    public class Skeleton : Actor, IUpdatable
-    {
+	class Chicken : Actor, IUpdatable
+	{
         private static readonly Random _random = new Random();
         private float _timeLastMove;
+        private float _timeLastEgg;
 
-        public Skeleton(Cell cell) : base(cell, TileSet.GetTile(TileType.Skeleton))
-        {
+        private bool _breedable;
+
+
+        public Chicken(Cell cell, bool breedable) : base(cell, TileSet.GetTile(TileType.Chicken))
+		{
+            _breedable = breedable;
             Program.AllUpdatables.Add(this);
-            Health = 60;
-            Attack = 40;
-            Defense = 30;
+            Health = 20;
+            Attack = 10;
+            Defense = 10;
         }
 
-        ~Skeleton()
-        {
+        ~Chicken()
+		{
             Program.AllUpdatables.Remove(this);
-        }
+		}
 
         public void Update(float deltaTime)
         {
             _timeLastMove += deltaTime;
+            _timeLastEgg += deltaTime;
 
-            if (_timeLastMove <= 0.25f)
+            if (_timeLastMove <= 0.69f)
                 return;
 
             _timeLastMove = 0.0f;
@@ -43,6 +46,13 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             var dir = (moveX, moveY).ToDirection();
 
             TryMove(dir);
+
+            if (_timeLastEgg < 10.00f || _breedable == false)
+                return;
+
+            Program.AllUpdatables.Add(new Egg(Cell.GetNeighbour((1,0).ToDirection())));
+
+            _timeLastEgg = 0.00f;
         }
 
         private void TryMove(Direction dir)
@@ -56,8 +66,8 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
         public override bool OnCollision(Actor other)
         {
-            if (!(other is Skeleton))
-            { 
+            if (!(other is Chicken))
+            {
                 other.Health -= this.Attack - other.Defense;
                 if (other.Health <= 0)
                 {

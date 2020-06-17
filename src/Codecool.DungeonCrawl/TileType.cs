@@ -9,6 +9,12 @@
         Skeleton,
         Portal,
         Sword,
-        Health
+        Health,
+        Chicken,
+        Egg,
+        Troll,
+        Bush,
+        Hatchet,
+        Shield
     }
 }

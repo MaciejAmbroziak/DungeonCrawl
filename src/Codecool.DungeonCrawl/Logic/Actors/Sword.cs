@@ -1,9 +1,4 @@
 ﻿using Codecool.DungeonCrawl.Logic.Map;
-using Perlin.Geom;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Codecool.DungeonCrawl.Logic.Interfaces;
 
 namespace Codecool.DungeonCrawl.Logic.Actors
 {
@@ -12,6 +7,8 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         public Sword(Cell cell) : base(cell, TileSet.GetTile(TileType.Sword))
         {
             Attack = 30;
+            Health = 1;
+            Defense = 30;
         }
         
         public override bool OnCollision(Actor other)
@@ -19,7 +16,6 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             if (other is Player)
             {
                 other.Attack += this.Attack;
-                Console.WriteLine($"Players attack: {other.Attack}");
                 this.Destroy();
                 return true;
             }
