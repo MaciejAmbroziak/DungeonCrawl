@@ -11,6 +11,9 @@
         Sword,
         Health,
         Chicken,
-        Egg
+        Egg,
+        Troll,
+        Bush,
+        Hatchet
     }
 }
