@@ -82,5 +82,6 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             }
         }
         public bool hasHatchet = false;
+        public bool hasDoorKey = false;
     }
 }

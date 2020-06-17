@@ -91,6 +91,8 @@ namespace Codecool.DungeonCrawl.Logic.Map
             'b' => TileType.Floor,
             'a' => TileType.Floor,
             'S' => TileType.Floor,
+            'k' => TileType.Floor,
+            'D' => TileType.Floor,
             _ => TileType.Empty
         };
 
@@ -111,6 +113,8 @@ namespace Codecool.DungeonCrawl.Logic.Map
             'b' => new Bush(cell),
             'a' => new Hatchet(cell),
             'S' => new Shield(cell),
+            'D' => new Door(cell),
+            'k' => new DoorKey(cell),
             _ => null
         };
     }
