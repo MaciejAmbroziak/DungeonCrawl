@@ -6,6 +6,9 @@ namespace Codecool.DungeonCrawl.Logic.Actors
     {
         public Hatchet(Cell cell) : base(cell, TileSet.GetTile(TileType.Hatchet))
         {
+            Health = 1;
+            Attack = 0;
+            Defense = 1000;
         }
         public override bool OnCollision(Actor other)
         {

@@ -6,7 +6,8 @@ namespace Codecool.DungeonCrawl.Logic.Actors
     {
         public Shield(Cell cell) : base(cell, TileSet.GetTile(TileType.Shield))
         {
-            Attack = 30;
+            Health = 1;
+            Attack = 0;
             Defense = 30;
         }
         
