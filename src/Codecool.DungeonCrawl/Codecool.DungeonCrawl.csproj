@@ -20,5 +20,11 @@
     <ItemGroup>
       <PackageReference Include="Matyasf.Perlin" Version="1.0.0" />
     </ItemGroup>
+    
+    <ItemGroup>
+      <None Update="map2.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
 
 </Project>

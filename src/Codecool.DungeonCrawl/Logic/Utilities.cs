@@ -32,7 +32,7 @@ namespace Codecool.DungeonCrawl.Logic
 
         public static bool IsPassable(this TileType tile) => tile switch
         {
-            TileType.Empty => true,
+            TileType.Empty => false,
             TileType.Floor => true,
             TileType.Wall => false,
             TileType.Portal => true,
