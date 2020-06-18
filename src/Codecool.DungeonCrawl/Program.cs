@@ -19,7 +19,9 @@ namespace Codecool.DungeonCrawl
 
         private static Sprite _mapContainer;
 
-        private static string _currentMapPath; 
+        private static string _currentMapPath;
+
+        private static int _currentMapPathIndex;
 
         /// <summary>
         ///     Entry point
@@ -57,8 +59,10 @@ namespace Codecool.DungeonCrawl
             _mapContainer = new Sprite();
             _mapContainer.ScaleX = _mapContainer.ScaleY;
             stage.AddChild(_mapContainer);
-            
-            LoadMap("map.txt");
+
+            _currentMapPathIndex = 0;
+            string mapPath = MapsList.MapsPaths[_currentMapPathIndex];
+            LoadMap(mapPath);
         }
 
         /// <summary>
@@ -82,6 +86,11 @@ namespace Codecool.DungeonCrawl
             LoadMap(_currentMapPath);
         }
 
+        public static void NextLevel()
+        {
+            _currentMapPath = MapsList.MapsPaths[++_currentMapPathIndex];
+            LoadMap(_currentMapPath);
+        }
         public static void LoadMap(string mapPath)
         {
             if (Actor.AllActors != null)

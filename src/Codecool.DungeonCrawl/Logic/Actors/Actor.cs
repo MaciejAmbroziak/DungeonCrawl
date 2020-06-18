@@ -92,7 +92,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
             if (target.Tilename == "Portal" && this is Player)
             {
-                // TODO: Load next map
+                Program.NextLevel();
             }
         }
         
