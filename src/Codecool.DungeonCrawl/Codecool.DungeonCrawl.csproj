@@ -23,6 +23,10 @@
         <Link>tiles.png</Link>
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
+      <Content Include="..\..\data\win.txt">
+        <Link>win.txt</Link>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
     
     <ItemGroup>

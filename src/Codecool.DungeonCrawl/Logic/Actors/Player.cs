@@ -45,6 +45,11 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             {
                 TryMove(Direction.Right);
             }
+            
+            if (KeyboardInput.IsKeyPressedThisFrame(Key.Escape))
+            {
+                Program.Restart();
+            }
         }
 
         private void TryMove(Direction dir)
