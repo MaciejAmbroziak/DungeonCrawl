@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa03e200-f887-4c4f-8350-8b013ed7db59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../data/maptom.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/maptom.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data/map1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/Map/MapsList.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Codecool.DungeonCrawl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Codecool.DungeonCrawl/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codecool.DungeonCrawl.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Codecool.DungeonCrawl.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Map/MapLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Map/MapLoader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +39,7 @@
     <setting file="file://$PROJECT_DIR$/Logic/Actors/Actor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Actors/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Interfaces/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Map/MapsList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Direction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Utilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/98A0D9B3-C453-4C8D-A79E-EE54665982EC/79/d9c96a99/PerlinApp.cs" root0="SKIP_HIGHLIGHTING" />
@@ -72,7 +76,6 @@
         <option value="$PROJECT_DIR$/Logic/Actors/Health.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Shield.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Sword.cs" />
-        <option value="$PROJECT_DIR$/Logic/Map/MapLoader.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Troll.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Skeleton.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Actor.cs" />
@@ -81,8 +84,11 @@
         <option value="$PROJECT_DIR$/Logic/Actors/Player.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Chicken.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Egg.cs" />
-        <option value="$PROJECT_DIR$/Program.cs" />
         <option value="$PROJECT_DIR$/../../data/maptom.txt" />
+        <option value="$PROJECT_DIR$/Logic/Map/MapsList.cs" />
+        <option value="$PROJECT_DIR$/../../data/map1.txt" />
+        <option value="$PROJECT_DIR$/Logic/Map/MapLoader.cs" />
+        <option value="$PROJECT_DIR$/Program.cs" />
       </list>
     </option>
   </component>
@@ -135,7 +141,7 @@
       <workItem from="1592334771540" duration="3834000" />
       <workItem from="1592379910527" duration="1467000" />
       <workItem from="1592396268000" duration="859000" />
-      <workItem from="1592465029997" duration="13127000" />
+      <workItem from="1592465029997" duration="14435000" />
     </task>
     <servers />
   </component>
@@ -160,28 +166,28 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="186" key="GridCell.Tab.0.bottom" timestamp="1592480927129">
+    <state width="1238" height="186" key="GridCell.Tab.0.bottom" timestamp="1592482395794">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1592480927129" />
+    <state width="1238" height="186" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1592482395794" />
     <state width="1238" height="115" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1592466541461" />
     <state width="1238" height="262" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1592475444780" />
-    <state width="1238" height="186" key="GridCell.Tab.0.center" timestamp="1592480927127">
+    <state width="1238" height="186" key="GridCell.Tab.0.center" timestamp="1592482395792">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1592480927127" />
+    <state width="1238" height="186" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1592482395792" />
     <state width="1238" height="115" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1592466541452" />
     <state width="1238" height="262" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1592475444779" />
-    <state width="1238" height="186" key="GridCell.Tab.0.left" timestamp="1592480927127">
+    <state width="1238" height="186" key="GridCell.Tab.0.left" timestamp="1592482395792">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1592480927127" />
+    <state width="1238" height="186" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1592482395792" />
     <state width="1238" height="115" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1592466541436" />
     <state width="1238" height="262" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1592475444779" />
-    <state width="1238" height="186" key="GridCell.Tab.0.right" timestamp="1592480927128">
+    <state width="1238" height="186" key="GridCell.Tab.0.right" timestamp="1592482395793">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="186" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1592480927128" />
+    <state width="1238" height="186" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1592482395793" />
     <state width="1238" height="115" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1592466541456" />
     <state width="1238" height="262" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1592475444780" />
     <state width="1238" height="291" key="GridCell.Tab.1.bottom" timestamp="1592385425175">

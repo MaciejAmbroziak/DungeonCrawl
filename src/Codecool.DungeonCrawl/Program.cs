@@ -58,7 +58,7 @@ namespace Codecool.DungeonCrawl
             _mapContainer.ScaleX = _mapContainer.ScaleY;
             stage.AddChild(_mapContainer);
             
-            LoadMap("map2.txt");
+            LoadMap("map.txt");
         }
 
         /// <summary>
