@@ -58,7 +58,8 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         {
             if (!(other is Skeleton))
             { 
-                other.Health -= this.Attack - other.Defense;
+                int damage = this.Attack - other.Defense;
+                if (damage >= 0) other.Health -= damage;
                 if (other.Health <= 0)
                 {
                     other.Kill();

@@ -14,9 +14,8 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         {
             if (other is Player)
             {
-                if (!other.hasDoorKey) ;
                 this.Kill();
-                other.hasDoorKey = true;
+                other.DoorKey += 1;
                 return true;
             }
             return false;

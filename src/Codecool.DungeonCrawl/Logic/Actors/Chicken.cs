@@ -38,11 +38,10 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             _timeLastMove = 0.0f;
 
             if (Health <= 0)
-			{
+            {
                 Program.AllUpdatables.Remove(this);
-
             }
-
+            
             var moveX = _random.Next(-1, 2);
             var moveY = _random.Next(-1, 2);
 
@@ -74,7 +73,8 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         {
             if (!(other is Chicken))
             {
-                other.Health -= this.Attack - other.Defense;
+                int damage = this.Attack - other.Defense;
+                if (damage >= 0) other.Health -= damage;
                 if (other.Health <= 0)
                 {
                     other.Kill();

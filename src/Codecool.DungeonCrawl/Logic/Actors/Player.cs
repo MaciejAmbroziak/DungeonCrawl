@@ -16,6 +16,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             Health = 100;
             Attack = 50;
             Defense = 20;
+            DoorKey = 0;
         }
 
         ~Player()
@@ -59,7 +60,8 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         {
             if (other is Skeleton || other is Troll || other is Chicken || other is Egg)
             { 
-                other.Health -= this.Attack - other.Defense;
+                int damage = this.Attack - other.Defense;
+                if (damage >= 0) other.Health -= damage;
                 if (other.Health <= 0)
                 {
                     other.Kill();

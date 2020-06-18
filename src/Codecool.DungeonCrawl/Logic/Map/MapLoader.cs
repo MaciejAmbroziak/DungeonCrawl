@@ -16,7 +16,7 @@ namespace Codecool.DungeonCrawl.Logic.Map
         /// <returns></returns>
         public static (int width, int height) GetMapDimensions()
         {
-            var lines = File.ReadAllLines("map.txt");
+            var lines = File.ReadAllLines("maptom.txt");
             var dimensions = lines[0].Split(" ");
             var width = int.Parse(dimensions[0]);
             var height = int.Parse(dimensions[1]);

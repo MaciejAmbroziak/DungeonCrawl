@@ -27,7 +27,6 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 			if (Health <= 0)
 			{
 				Program.AllUpdatables.Remove(this);
-
 			}
 
 			if (_timeFromSpawn > 10.00f)
@@ -42,7 +41,8 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 		{
 			if (!(other is Chicken))
 			{
-				this.Health -= other.Attack - this.Defense;
+				int damage = this.Attack - other.Defense;
+				if (damage >= 0) other.Health -= damage;
 				if (this.Health <= 0)
 				{
 					this.Kill();

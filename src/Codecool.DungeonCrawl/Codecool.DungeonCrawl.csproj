@@ -11,6 +11,10 @@
         <Link>map.txt</Link>
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
+      <Content Include="..\..\data\maptom.txt">
+        <Link>maptom.txt</Link>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
       <Content Include="..\..\data\tiles.png">
         <Link>tiles.png</Link>
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>

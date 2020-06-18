@@ -17,7 +17,17 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         {
             if (other is Player)
             {
-                if (other.hasDoorKey == false)
+                if (other.DoorKey > 0)
+                {
+                    this.Health -= (other.Attack) * 1500;
+                    if (Health <= 0)
+                    {
+                        other.DoorKey -= 1;
+                        this.Kill();
+                        return true;
+                    }
+                }
+                else
                 {
                     this.Health -= other.Attack;
                     if (Health <= 0)
@@ -26,17 +36,6 @@ namespace Codecool.DungeonCrawl.Logic.Actors
                         return true;
                     }
                 }
-
-                if (other.hasDoorKey)
-                {
-                    this.Health -= (other.Attack) * 1500;
-                    if (Health <= 0)
-                    {
-                        this.Kill();
-                        return true;
-                    }
-                }
-
             }
             return false;
         }
