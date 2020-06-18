@@ -15,7 +15,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             if (other is Player)
             {
                 if(!other.hasHatchet);
-                    this.Destroy();
+                    this.Kill();
                     other.hasHatchet = true;
                     return true;
             }

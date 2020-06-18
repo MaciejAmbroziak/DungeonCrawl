@@ -26,7 +26,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 
 			if (_timeFromSpawn > 10.00f)
 			{
-				Destroy();
+				Kill();
 				Program.AllUpdatables.Remove(this);
 				Program.AllUpdatables.Add(item: new Chicken(Cell.GetNeighbour((-1, 0).ToDirection()), false));
 			}
@@ -39,7 +39,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 				this.Health -= other.Attack - this.Defense;
 				if (this.Health <= 0)
 				{
-					this.Destroy();
+					this.Kill();
 					return true;
 				}
 			}

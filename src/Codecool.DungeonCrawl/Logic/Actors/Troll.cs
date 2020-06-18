@@ -61,7 +61,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
                 other.Health -= this.Attack - other.Defense;
                 if (other.Health <= 0)
                 {
-                    other.Destroy();
+                    other.Kill();
                     return true;
                 }
             }

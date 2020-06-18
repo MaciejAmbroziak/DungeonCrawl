@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using Codecool.DungeonCrawl.Logic.Map;
 using Perlin.Display;
 using Perlin.Geom;
@@ -9,9 +11,11 @@ namespace Codecool.DungeonCrawl.Logic.Actors
     /// </summary>
     public abstract class Actor
     {
+        public static readonly List<Actor> AllActors = new List<Actor>();
         // default ctor
         protected Actor(Cell cell, Rectangle tile)
         {
+            AllActors.Add(this);
             Cell = cell;
             Cell.Actor = this;
 
@@ -39,6 +43,16 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         public void Destroy()
         {
             Sprite?.Parent?.RemoveChild(Sprite);
+            AllActors.Remove(this);
+        }
+
+        public void Kill()
+        {
+            OnDeath();
+            Destroy();
+        }
+        protected virtual void OnDeath()
+        {
         }
 
         public Cell Cell { get; private set; }
@@ -76,11 +90,13 @@ namespace Codecool.DungeonCrawl.Logic.Actors
                 Position = target.Position;
             }
 
-            if (target.Tilename == "Portal" && this.GetType().Name == "Player")
+            if (target.Tilename == "Portal" && this is Player)
             {
-                System.Environment.Exit(0);
+                // TODO: Load next map
             }
         }
+
+      
         public bool hasHatchet = false;
         public bool hasDoorKey = false;
     }

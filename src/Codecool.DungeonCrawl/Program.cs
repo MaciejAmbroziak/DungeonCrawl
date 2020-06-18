@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Codecool.DungeonCrawl.Logic.Actors;
 using Codecool.DungeonCrawl.Logic.Interfaces;
 using Codecool.DungeonCrawl.Logic.Map;
 using Perlin;
@@ -16,6 +18,8 @@ namespace Codecool.DungeonCrawl
         public static List<IUpdatable> AllUpdatables = new List<IUpdatable>();
 
         private static Sprite _mapContainer;
+
+        private static string _currentMapPath; 
 
         /// <summary>
         ///     Entry point
@@ -53,8 +57,8 @@ namespace Codecool.DungeonCrawl
             _mapContainer = new Sprite();
             _mapContainer.ScaleX = _mapContainer.ScaleY;
             stage.AddChild(_mapContainer);
-
-            Map = MapLoader.LoadMap(_mapContainer);
+            
+            LoadMap("map.txt");
         }
 
         /// <summary>
@@ -67,11 +71,32 @@ namespace Codecool.DungeonCrawl
 			try
 			{
 				AllUpdatables.ForEach(x => x.Update(deltaTime));
-			}
+            }
 			catch (System.Exception)
 			{
-				System.Console.WriteLine("List change mid for loop");
-			}
+            }
+        }
+
+        public static void Restart()
+        {
+            LoadMap(_currentMapPath);
+        }
+
+        public static void LoadMap(string mapPath)
+        {
+            if (Actor.AllActors != null)
+            {
+                while (Actor.AllActors.Count > 0)
+                {
+                    Actor.AllActors[0].Destroy();
+                }
+            }
+            
+            AllUpdatables?.Clear();
+            Map?.Clear();
+
+            Map = MapLoader.LoadMap(_mapContainer, mapPath);
+            _currentMapPath = mapPath;
         }
     }
 }

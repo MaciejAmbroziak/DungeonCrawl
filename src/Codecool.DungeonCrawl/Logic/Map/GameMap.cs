@@ -28,6 +28,13 @@
             return _map[x, y];
         }
 
+        public void Clear()
+        {
+            foreach (Cell cell in _map)
+            {
+                cell.Destroy();
+            }
+        }
         public Cell this[int x, int y] => GetCell(x, y);
     }
 }

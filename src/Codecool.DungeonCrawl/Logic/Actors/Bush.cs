@@ -20,7 +20,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
                     this.Health -= other.Attack;
                     if (Health <= 0)
                     {
-                        this.Destroy();
+                        this.Kill();
                         return true;
                     }
                 }
@@ -30,7 +30,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
                     this.Health -= (other.Attack) * 4;
                     if (Health <= 0)
                     {
-                        this.Destroy();
+                        this.Kill();
                         return true;
                     }
                 }

@@ -80,5 +80,10 @@ namespace Codecool.DungeonCrawl.Logic.Map
             var (x, y) = dir.ToVector();
             return GetNeighbour(x, y);
         }
+        
+        public void Destroy()
+        {
+            Sprite?.Parent?.RemoveChild(Sprite);
+        }
     }
 }

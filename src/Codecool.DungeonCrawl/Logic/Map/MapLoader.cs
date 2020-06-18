@@ -29,9 +29,9 @@ namespace Codecool.DungeonCrawl.Logic.Map
         /// </summary>
         /// <param name="cellParent"></param>
         /// <returns></returns>
-        public static GameMap LoadMap(DisplayObject cellParent)
+        public static GameMap LoadMap(DisplayObject cellParent, string mapPath)
         {
-            var lines = File.ReadAllLines("map.txt");
+            var lines = File.ReadAllLines(mapPath);
             var dimensions = lines[0].Split(" ");
             var width = int.Parse(dimensions[0]);
             var height = int.Parse(dimensions[1]);
