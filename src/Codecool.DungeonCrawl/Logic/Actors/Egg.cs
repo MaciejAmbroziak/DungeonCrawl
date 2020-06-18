@@ -28,7 +28,7 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 			{
 				Program.AllUpdatables.Remove(this);
 			}
-			
+
 			if (_timeFromSpawn > 10.00f)
 			{
 				Kill();
