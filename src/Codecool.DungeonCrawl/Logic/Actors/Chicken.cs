@@ -36,11 +36,6 @@ namespace Codecool.DungeonCrawl.Logic.Actors
                 return;
 
             _timeLastMove = 0.0f;
-
-            if (Health <= 0)
-            {
-                Program.AllUpdatables.Remove(this);
-            }
             
             var moveX = _random.Next(-1, 2);
             var moveY = _random.Next(-1, 2);
