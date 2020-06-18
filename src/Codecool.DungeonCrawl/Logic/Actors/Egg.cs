@@ -24,6 +24,12 @@ namespace Codecool.DungeonCrawl.Logic.Actors
 		{
 			_timeFromSpawn += deltaTime;
 
+			if (Health <= 0)
+			{
+				Program.AllUpdatables.Remove(this);
+
+			}
+
 			if (_timeFromSpawn > 10.00f)
 			{
 				Kill();
