@@ -95,9 +95,8 @@ namespace Codecool.DungeonCrawl.Logic.Actors
                 // TODO: Load next map
             }
         }
-
-      
+        
         public bool hasHatchet = false;
-        public bool hasDoorKey = false;
+        public int DoorKey;
     }
 }
