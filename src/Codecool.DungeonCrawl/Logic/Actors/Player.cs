@@ -14,8 +14,8 @@ namespace Codecool.DungeonCrawl.Logic.Actors
         {
             Program.AllUpdatables.Add(this);
             Health = 100;
-            Attack = 50;
-            Defense = 20;
+            Attack = 70;
+            Defense = 25;
             DoorKey = 0;
         }
 
@@ -49,6 +49,16 @@ namespace Codecool.DungeonCrawl.Logic.Actors
             if (KeyboardInput.IsKeyPressedThisFrame(Key.Escape))
             {
                 Program.Restart();
+            }
+            
+            if (KeyboardInput.IsKeyPressedThisFrame(Key.Enter))
+            {
+                Program.NextLevel();
+            }
+            
+            if (KeyboardInput.IsKeyPressedThisFrame(Key.Q))
+            {
+                System.Environment.Exit(0);
             }
         }
 

@@ -15,6 +15,10 @@
         <Link>map1.txt</Link>
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
+      <Content Include="..\..\data\MapDamian.txt">
+        <Link>MapDamian.txt</Link>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
       <Content Include="..\..\data\maptom.txt">
         <Link>maptom.txt</Link>
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
