@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using Codecool.DungeonCrawl.Logic.Map;
 using Perlin.Display;
