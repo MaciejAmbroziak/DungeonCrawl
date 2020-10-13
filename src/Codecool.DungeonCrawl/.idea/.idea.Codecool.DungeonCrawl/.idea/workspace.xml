@@ -31,31 +31,31 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Logic/Actors/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Direction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Utilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/98A0D9B3-C453-4C8D-A79E-EE54665982EC/79/d9c96a99/PerlinApp.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9A563B7A-670E-4F3C-8FEE-3408E28A0B0B/82/e4495d7a/Key.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Actors/Sword.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Actors/Bush.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Actors/Shield.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Actors/Hatchet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Actors/Egg.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Actors/Troll.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Actors/Chicken.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Map/GameMap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Map/MapLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Map/Cell.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Actors/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Actors/Skeleton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Actors/Actor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Interfaces/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Map/GameMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9A563B7A-670E-4F3C-8FEE-3408E28A0B0B/82/e4495d7a/Key.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Logic/Map/MapsList.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TileSet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Map/MapLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Chicken.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Actor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Door.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Troll.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Key.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Skeleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Egg.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Hatchet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Shield.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Bush.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Actors/Sword.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Logic/Interfaces/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TileType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Actors/Key.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Logic/Actors/Door.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TileSet.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -65,7 +65,6 @@
         <option value="$PROJECT_DIR$/../../data/map.txt" />
         <option value="$PROJECT_DIR$/TileSet.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/98A0D9B3-C453-4C8D-A79E-EE54665982EC/79/d9c96a99/PerlinApp.cs" />
-        <option value="$PROJECT_DIR$/Logic/Map/Cell.cs" />
         <option value="$PROJECT_DIR$/Logic/Map/GameMap.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Bush.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Hatchet.cs" />
@@ -74,19 +73,20 @@
         <option value="$PROJECT_DIR$/Logic/Actors/Sword.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Troll.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Skeleton.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Key.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Door.cs" />
         <option value="$PROJECT_DIR$/../../data/map1.txt" />
         <option value="$PROJECT_DIR$/Logic/Map/MapLoader.cs" />
-        <option value="$PROJECT_DIR$/Logic/Actors/Actor.cs" />
         <option value="$PROJECT_DIR$/../../data/maptom.txt" />
         <option value="$PROJECT_DIR$/../../data/win.txt" />
-        <option value="$PROJECT_DIR$/Program.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Chicken.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Egg.cs" />
         <option value="$PROJECT_DIR$/../../data/MapDamian.txt" />
         <option value="$PROJECT_DIR$/Logic/Map/MapsList.cs" />
         <option value="$PROJECT_DIR$/Logic/Actors/Player.cs" />
+        <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Actor.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Door.cs" />
+        <option value="$PROJECT_DIR$/Logic/Actors/Key.cs" />
+        <option value="$PROJECT_DIR$/Logic/Map/Cell.cs" />
       </list>
     </option>
   </component>
@@ -103,6 +103,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="Codecool.DungeonCrawl" type="DotNetProject" factoryName=".NET Project">
@@ -124,6 +125,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -144,11 +146,20 @@
       <workItem from="1592526067895" duration="183000" />
       <workItem from="1592552201305" duration="2556000" />
       <workItem from="1592597258843" duration="135000" />
+      <workItem from="1592599386432" duration="296000" />
+      <workItem from="1592606820689" duration="61000" />
+      <workItem from="1592649057817" duration="26000" />
+      <workItem from="1592685422495" duration="9000" />
+      <workItem from="1593381188358" duration="667000" />
+      <workItem from="1593528772617" duration="112000" />
+      <workItem from="1599994265635" duration="183000" />
+      <workItem from="1600559354916" duration="43000" />
+      <workItem from="1601991167546" duration="18000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
@@ -168,28 +179,32 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="183" key="GridCell.Tab.0.bottom" timestamp="1592598537977">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1599994668773">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1238" height="183" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1592598537977" />
+    <state width="1238" height="183" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1593529201179" />
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1599994668773" />
     <state width="1238" height="156" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1592553834942" />
     <state width="1238" height="185" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1592486364597" />
-    <state width="1238" height="183" key="GridCell.Tab.0.center" timestamp="1592598537976">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1599994668772">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1238" height="183" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1592598537976" />
+    <state width="1238" height="183" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1593529201178" />
+    <state width="1398" height="211" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1599994668772" />
     <state width="1238" height="156" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1592553834941" />
     <state width="1238" height="185" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1592486364596" />
-    <state width="1238" height="183" key="GridCell.Tab.0.left" timestamp="1592598537976">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1599994668771">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1238" height="183" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1592598537976" />
+    <state width="1238" height="183" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1593529201178" />
+    <state width="1398" height="211" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1599994668771" />
     <state width="1238" height="156" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1592553834941" />
     <state width="1238" height="185" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1592486364595" />
-    <state width="1238" height="183" key="GridCell.Tab.0.right" timestamp="1592598537977">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1599994668772">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1238" height="183" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1592598537977" />
+    <state width="1238" height="183" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1593529201179" />
+    <state width="1398" height="211" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1599994668772" />
     <state width="1238" height="156" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1592553834942" />
     <state width="1238" height="185" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1592486364597" />
     <state width="1238" height="291" key="GridCell.Tab.1.bottom" timestamp="1592385425175">
